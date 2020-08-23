@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="styles">
+        <title>My Webpage</title>
+        <script>
+        function check()
+        {
+              let response = document.querySelector('#q1').value;
+                if (response.toLowerCase() == "stationery")
+                {
+                  document.querySelector("#a1").style.color = "green";
+                  document.querySelector("#a1").innerHTML = "Good job!";
+                }
+                else
+                {
+                  document.querySelector("#a1").style.color = "red";
+                  document.querySelector("#a1").innerHTML = "The correct answer is STATIONERY";
+                }
+        }
+        function check2()
+        {
+           let response2 = document.querySelector('#q2').value;
+
+                if (response2.toLowerCase() == "january")
+                {
+                  document.querySelector("#a2").style.color = "green";
+                  document.querySelector("#a2").innerHTML = "Good job!";
+                }
+                else
+                {
+                  document.querySelector("#a2").style.color = "red";
+                  document.querySelector("#a2").innerHTML = "The correct answer is JANUARY";
+                }
+
+        }
+
+        function check3()
+        {
+           let response3 = document.querySelector('#q3').value;
+            if (response3.toLowerCase() == "dear future husband")
+                {
+                  document.querySelector("#a3").style.color = "green";
+                  document.querySelector("#a3").innerHTML = "Good job!";
+                }
+                else
+                {
+                  document.querySelector("#a3").style.color = "red";
+                  document.querySelector("#a3").innerHTML = "The correct answer is DEAR FUTURE HUSBAND";
+                }
+
+        }
+
+        </script>
+    </head>
+    <body>
+        <h1> Avantika Naik </h1>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#">More Pages</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link active" href="/index">Home<span class="sr-only">(current)</span></a>
+              <a class="nav-item nav-link" href="/edu">Education</a>
+              <a class="nav-item nav-link" href="/code">Code</a>
+              <a class="nav-item nav-link" href="/skills">Skills</a>
+            </div>
+          </div>
+        </nav>
+        <br>
+        <h2>Beyond the Code</h2>
+        <br>
+        <h3>Video Production</h3>
+        <p>Check out my youtube channel for more videos!</p>
+        <div style="text-align:center">
+           <iframe src="https://youtube.com/embed/RHhralF4EE8" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <br>
+        <hr>
+        <h3>Creativity</h3>
+        <p>Here's a fun quiz on the creative things I do</p>
+        <br>
+
+        <div style="text-align:center">
+          <p style="color:plum">What do I collect?</p>
+          <form onsubmit="check(); return false;">
+            <input type="text" id="q1" placeholder="Answer here">
+            <input type="submit" value="Click for answer!">
+          </form>
+          <div id="a1" style="color:plum">
+            Answer
+           </div>
+          <br><br>
+
+          <div style="text-align:center">
+          <p style="color:plum">What was my most unique bullet journal spread?</p>
+          <form onsubmit="check2(); return false;">
+            <input type="text" id="q2" placeholder="Answer here">
+            <input type="submit" value="Click for answer!">
+          </form>
+          <div id="a2" style="color:plum">
+            Answer
+           </div>
+          <br><br>
+
+          <div style="text-align:center">
+          <p style="color:plum">Which song did I parody for my roomate?</p>
+          <form onsubmit="check3(); return false;">
+            <input type="text" id="q3" placeholder="Answer here">
+            <input type="submit" value="Click for answer!">
+          </form>
+          <div id="a3" style="color:plum">
+            Answer
+           </div>
+           <br><br>
+           <hr>
+           <h3>Leadership</h3>
+           <p>I get things done!</p>
+           <p>Here is a video of what I did during the pandemic!</p>
+            <div style="text-align:center">
+               <iframe src="https://youtube.com/embed/e4PH2J0GDLo" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <br>
+            <p>During my time as NHS Vice President, I also did a lot more!</p>
+            <ul>
+              <li> Ran fundraisers</li>
+              <li>Volunteered for local events and businesses</li>
+              <li>Raised money for charities</li>
+              <li>Planned school wide events</li>
+            </ul>
+            <br>
+    </body>
+</html>
